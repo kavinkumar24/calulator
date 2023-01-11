@@ -1,0 +1,119 @@
+<html>
+<head>  
+<title> JavaScript Calculator </title>  
+  
+<style>  
+h1 {  
+    text-align: center;  
+    padding: 23px;  
+    background-color:black;  
+    color:chartreuse;  
+    }  
+  
+#clear{  
+width: 220px;  
+border: 3px solid gray;  
+border-radius: 20px;  
+padding: 5px;  
+background-color:chartreuse;  
+}  
+.K  
+{  
+width: 400px;  
+height: 570px;  
+margin: auto;  
+border: 10px solid yellow;  
+border-radius: 70px;  
+padding: 20px;   
+background-color:salmon;
+}  
+  
+  
+  
+input  
+{  
+width: 75px;  
+background-color:white;  
+color:darkblue;  
+border: 5px solid gray;  
+    border-radius: 10px;  
+    padding: 26px;  
+    margin: 5px;  
+    font-size: 30px;  
+    text-align:center;
+    border-color: blue;
+}  
+ 
+#calc{  
+width: 250px;  
+border: 5px solid black;  
+    border-radius: 100px;  
+    padding: 10px;  
+    background-color: dimgray;
+    color:white;
+    margin: auto;  
+}  
+@media screen and (max-width: 800px){
+    h1 {    
+        padding: 7px;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        } 
+   
+      
+#clear{  
+    width: 160px; 
+    height: 50px;
+    border-radius: 10px;  
+    padding: 5px;  
+    font-size: 20px;
+    }  
+.K  
+{  
+    width: 400px;  
+    height: 570px;  
+    margin: auto;  
+    border: 10px solid yellow;  
+    border-radius: 70px;  
+    padding: 2px;
+    box-shadow: 7px 10px 2px green;
+}  
+    }
+</style>  
+  
+</head>  <center>
+<body style="background-color:darkred;text-align:center">  
+<h1>JAVASCRIPT CALCULATOR </h1>  
+<div class= "K">  
+<form name = "formp">  
+    <input id = "calc" type ="text" name = "answer"> <br> <br> 
+    <input  type= "button" value = "1" onclick = "formp.answer.value += '1' ">  
+    <input type = "button" value =  "2" onclick = "formp.answer.value += '2' ">  
+   <input type = "button" value = "3" onclick = "formp.answer.value += '3' ">  
+   <input type = "button" value = "+" onclick = "formp.answer.value += '+' "> 
+    
+  <br>
+    <input  type= "button" value = "4" onclick = "formp.answer.value += '4' ">  
+    <input type = "button" value =  "5" onclick = "formp.answer.value += '5' ">  
+    <input type = "button" value = "6" onclick = "formp.answer.value += '6' ">  
+    <input type = "button" value = "-" onclick = "formp.answer.value += '-' "> 
+     <br>
+     <input  type= "button" value = "7" onclick = "formp.answer.value += '7' ">  
+     <input type = "button" value =  "8" onclick = "formp.answer.value += '8' ">  
+     <input type = "button" value = "9" onclick = "formp.answer.value += '9' ">  
+     <input type = "button" value = "*" onclick = "formp.answer.value += '*' "> 
+        <br>
+        <input type = "button" value = "/" onclick = "formp.answer.value += '/' ">  
+        <input type = "button" value = "0" onclick = "formp.answer.value += '0' ">  
+        <input type = "button" value = "." onclick = "formp.answer.value += '.' ">  
+        <input type = "button" value = "=" onclick = "formp.answer.value = eval(formp.answer.value) ">  
+  <br>
+   
+      
+  <input type = "button" value = "CLEAR ALL" onclick = "formp.answer.value = ' ' " id= "clear" >  
+  <br>   
+    
+</form>  
+</div>  </center>
+</body>  
+</html> 
